@@ -20,6 +20,7 @@ export default class SavedList extends Component {
             </NavLink>
           );
         })}
+        {/* Add a route at the path `/add-movie */}
         <Link to="/add-movie">Add Movie</Link>
         <div className="home-button">
           <Link to="/">Home</Link>

@@ -15,9 +15,10 @@ const UpdateMovie = props => {
         .catch(err => console.error(err));
     }
   }, []);
-
+// PUT request
   const handleSubmit = e => {
     e.preventDefault();
+    // The form should make a PUT request to the server when submitted
     if (params.id) {
       axios
         .put(`http://localhost:5000/api/movies/${params.id}`, data)
@@ -44,6 +45,7 @@ const UpdateMovie = props => {
   };
 
   return (
+    // Create a component with a form to update the chosen movie
     <div>
       <form onSubmit={handleSubmit}>
         <input
@@ -78,6 +80,7 @@ const UpdateMovie = props => {
           onChange={e => handleChange(e)}
         />
         <br />
+        {/* Add a button in the movie component that routes you to your new route with the movies's id as the URL param */}
         <button type="submit">Submit</button>
       </form>
     </div>
