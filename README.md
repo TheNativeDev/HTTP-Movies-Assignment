@@ -2,7 +2,7 @@
 
 ## Instructions
 
-- **Fork** this repository, then clone your fork.
+- **Fork** this repository, then clone your fork. 
 - Run `yarn` to download dependencies.
 - Run the server using `yarn start` or `node server.js`.
 - In a separate terminal cd into the `client` folder and run `yarn install` to download dependencies.
